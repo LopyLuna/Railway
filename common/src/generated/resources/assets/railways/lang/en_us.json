@@ -370,6 +370,8 @@
 	"railways.bogeys.styles.heavyweight": "Heavyweight",
 	"railways.bogeys.styles.radial": "Radial",
 
+	"railways.bogeys.styles.handcar": "Handcar",
+
 	"railways.style_select.manage_favorites": "Manage Favorites",
 	"railways.style_select.title.favorites.pick_slot": "Pick Slot",
 	"railways.style_select.title.favorites.pick_style": "Pick Favorite Style",
