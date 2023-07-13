@@ -317,6 +317,7 @@ public class CRBlocks {
                     .properties(p -> p.color(MaterialColor.PODZOL))
                     .transform(BuilderTransformers.handcar())
                     .item(HandcarItem::new)
+                    .model((c, p) -> p.generated(c, Railways.asResource("item/" + c.getName())))
                     .build()
                     .lang("Handcar")
                     .register();
