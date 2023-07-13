@@ -25,7 +25,7 @@ import org.apache.commons.lang3.mutable.MutableObject;
 
 public class HandcarItem extends TrackTargetingBlockItem {
     public HandcarItem(Block block, Item.Properties properties) {
-        super(block, properties, CREdgePointTypes.COUPLER);
+        super(block, properties, CREdgePointTypes.HANDCAR);
     }
 
 
