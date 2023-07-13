@@ -82,8 +82,8 @@ public class CRBogeyStyles {
     ;
 
     public static final BogeyStyle
-            HANDCART = create("handcart", "handcart_cycle_group")
-            .size(BogeySizes.SMALL, () -> CRBogeyRenderer.HandCartBogeyRenderer::new, CRBlocks.HANDCART)
+            HANDCAR = create("handcar", "handcar_cycle_group")
+            .size(BogeySizes.SMALL, () -> CRBogeyRenderer.HandcarBogeyRenderer::new, CRBlocks.HANDCAR)
             .build();
 
 

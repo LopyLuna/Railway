@@ -1,4 +1,4 @@
-package com.railwayteam.railways.content.handcart;
+package com.railwayteam.railways.content.handcar;
 
 import com.railwayteam.railways.content.conductor.vent.VentBlock;
 import com.railwayteam.railways.content.custom_bogeys.CRBogeyBlock;
@@ -13,17 +13,17 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 
-public class HandcartBlock extends CRBogeyBlock {
-    public HandcartBlock(BlockBehaviour.Properties props) {
-        this(props, CRBogeyStyles.HANDCART, BogeySizes.SMALL);
+public class HandcarBlock extends CRBogeyBlock {
+    public HandcarBlock(BlockBehaviour.Properties props) {
+        this(props, CRBogeyStyles.HANDCAR, BogeySizes.SMALL);
     }
 
     @ExpectPlatform
-    public static HandcartBlock create(Properties properties) {
+    public static HandcarBlock create(Properties properties) {
         throw new AssertionError();
     }
 
-    protected HandcartBlock(BlockBehaviour.Properties props, BogeyStyle style, BogeySize size) {
+    protected HandcarBlock(BlockBehaviour.Properties props, BogeyStyle style, BogeySize size) {
         super(props, style, size);
     }
 

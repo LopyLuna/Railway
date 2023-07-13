@@ -375,11 +375,11 @@ public class CRBogeyRenderer {
         }
     }
 
-    public static class HandCartBogeyRenderer extends BogeyRenderer {
+    public static class HandcarBogeyRenderer extends BogeyRenderer {
         @Override
         public void initialiseContraptionModelData(MaterialManager materialManager) {
             createModelInstances(materialManager, CR_BOGEY_WHEELS, 2);
-            createModelInstances(materialManager, HANDCART_FRAME);
+            createModelInstances(materialManager, HANDCAR_FRAME);
         }
 
         @Override
@@ -390,7 +390,7 @@ public class CRBogeyRenderer {
         @Override
         public void render(CompoundTag bogeyData, float wheelAngle, PoseStack ms, int light, VertexConsumer vb, boolean inContraption) {
             boolean inInstancedContraption = vb == null;
-            Transform<?> transform = getTransformFromPartial(HANDCART_FRAME, ms, inInstancedContraption)
+            Transform<?> transform = getTransformFromPartial(HANDCAR_FRAME, ms, inInstancedContraption)
                     .translate(0, 5 / 16f, 0);
             finalize(transform, ms, light, vb);
 

@@ -4,7 +4,7 @@ import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.compat.tracks.TrackCompatUtils;
 import com.railwayteam.railways.content.conductor.ConductorCapItem;
 import com.railwayteam.railways.content.conductor.remote_lens.RemoteLensItem;
-import com.railwayteam.railways.content.handcart.HandcartItem;
+import com.railwayteam.railways.content.handcar.HandcarItem;
 import com.railwayteam.railways.content.minecarts.MinecartJukebox;
 import com.railwayteam.railways.content.minecarts.MinecartWorkbench;
 import com.railwayteam.railways.multiloader.CommonTags;

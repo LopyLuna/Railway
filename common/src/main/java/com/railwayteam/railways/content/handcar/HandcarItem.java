@@ -1,4 +1,4 @@
-package com.railwayteam.railways.content.handcart;
+package com.railwayteam.railways.content.handcar;
 
 import com.railwayteam.railways.registry.CRBlocks;
 import com.railwayteam.railways.registry.CREdgePointTypes;
@@ -18,8 +18,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 
-public class HandcartItem extends TrackTargetingBlockItem {
-    public HandcartItem(Block block, Item.Properties properties) {
+public class HandcarItem extends TrackTargetingBlockItem {
+    public HandcarItem(Block block, Item.Properties properties) {
         super(block, properties, CREdgePointTypes.COUPLER);
     }
 
@@ -43,7 +43,7 @@ public class HandcartItem extends TrackTargetingBlockItem {
                     player, pContext.getHand(), stack, new BlockHitResult(hitPos, direction.getOpposite(), placePos, false)
             );
             if (level.getBlockState(placePos).canBeReplaced(ctx)) {
-                BlockState placeState = CRBlocks.HANDCART.getDefaultState();
+                BlockState placeState = CRBlocks.HANDCAR.getDefaultState();
                 level.setBlock(placePos, placeState, 0);
             }
         }

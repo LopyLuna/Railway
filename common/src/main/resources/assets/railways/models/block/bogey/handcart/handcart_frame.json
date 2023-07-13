@@ -2,8 +2,8 @@
 	"parent": "block/block",
 	"loader": "forge:obj",
 	"flip_v": true,
-    	"model": "railways:models/block/bogey/handcart/handcart_frame.obj",
+    	"model": "railways:models/block/bogey/handcar/handcar_frame.obj",
     	"textures": {
-    		"0": "railways:block/bogeys/handcart_frame"
+    		"0": "railways:block/bogeys/handcar_frame"
     }
 }

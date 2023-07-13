@@ -357,7 +357,7 @@ bbde4245a7c4564009fc5f850b6a296047fd9c82 assets\railways\models\block\track\comp
 c5df1476d3b773c1d90feb4502433b6df28324b2 assets\railways\blockstates\track_crimson.json
 75664c19d2ea484eaf82305d84b776cf5e7b5a7f assets\railways\models\block\track\acacia\x_ortho.json
 bb1961167534d4b75d59d638729df7fe89dd7fce assets\railways\models\block\track\compat\blue_skies\maple\diag.json
-1db975c0182f6eb2af47df134d4119e89d83ee54 assets\railways\blockstates\handcart.json
+1db975c0182f6eb2af47df134d4119e89d83ee54 assets\railways\blockstates\handcar.json
 fcca546e74fb593b53f462b9026748572bed81a0 data\railways\loot_tables\blocks\track_biomesoplenty_redwood.json
 df92c5fd25bb8f1a726443e3c6bc40911feb26fa assets\railways\models\block\track\compat\twilightforest\minewood\cross_d1_zo.json
 f39f399546c3f6967fec2976eddcc04bd31e6711 assets\railways\models\block\track\compat\biomesoplenty\redwood\cross_ortho.json
@@ -931,7 +931,7 @@ a53adf180389f7511158656d96f008e560fe3f98 assets\railways\models\item\lime_conduc
 9e05f7823bf1bbde81ac25a041f8849e822abe79 assets\railways\models\block\track\compat\biomesoplenty\jacaranda\cross_d1_xo.json
 3dc77e1a5e260a497b886a06932ed16d285e9ef6 assets\railways\models\block\track\ender\teleport.json
 aa956406266babe5222b5b3c6368070841ffafcd data\railways\advancements\recipes\railways\dying_existing_cap_white.json
-2b2a4bde1a1c86393b28fa3ff9b81ef1ddeed22d data\railways\loot_tables\blocks\handcart.json
+2b2a4bde1a1c86393b28fa3ff9b81ef1ddeed22d data\railways\loot_tables\blocks\handcar.json
 38f281782e110308a316dcaf616c7b69c45b5a6b assets\railways\models\block\track\compat\twilightforest\twilight_oak\diag_2.json
 1b995b2c7ac08411f059580f1aee0d2408161d14 data\railways\advancements\recipes\railways\dying_existing_cap_orange.json
 2a354476d289464c6fe725072072faa6af2fc5c5 assets\railways\models\block\track\compat\twilightforest\minewood\cross_d1_xo.json

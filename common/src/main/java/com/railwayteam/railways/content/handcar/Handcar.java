@@ -1,11 +1,11 @@
-package com.railwayteam.railways.content.handcart;
+package com.railwayteam.railways.content.handcar;
 
 import com.simibubi.create.content.trains.signal.TrackEdgePoint;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
-public class Handcart extends TrackEdgePoint {
+public class Handcar extends TrackEdgePoint {
     @Override
     public boolean canMerge() {
         return false;
