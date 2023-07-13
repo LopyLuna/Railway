@@ -380,7 +380,7 @@ public class CRBogeyRenderer {
         public void initialiseContraptionModelData(MaterialManager materialManager) {
             createModelInstances(materialManager, CR_BOGEY_WHEELS, 2);
             createModelInstances(materialManager, HANDCAR_FRAME);
-            createModelInstances(materialManager, HANDCAR_COG);
+            createModelInstances(materialManager, HANDCAR_FLYWHEEL);
         }
 
         @Override
@@ -395,10 +395,11 @@ public class CRBogeyRenderer {
                     .translate(0, 5 / 16f, 0);
             finalize(transform, ms, light, vb);
 
-            Transform<?> bogeyWheels = getTransformFromPartial(HANDCAR_COG, ms, inInstancedContraption)
-                    .translate(0, 18 / 16f, 0)
-                    .rotateX(wheelAngle)
-                    .translate(0, -13 / 16f, 0);
+            Transform<?> bogeyWheels = getTransformFromPartial(HANDCAR_FLYWHEEL, ms, inInstancedContraption)
+                    .translate(0,5/16f,0)
+                    //.translate(8/16f, 14 / 16f, -8/16f)
+                    //.rotateZ(90)
+                    .rotateX(wheelAngle);
             finalize(bogeyWheels, ms, light, vb);
 
             Transform<?>[] wheels = getTransformsFromPartial(CR_BOGEY_WHEELS, ms, inInstancedContraption, 2);

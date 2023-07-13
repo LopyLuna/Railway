@@ -49,7 +49,7 @@ public class BuilderTransformers {
         return b -> b.initialProperties(SharedProperties::softMetal)
                 .properties(p -> p.sound(SoundType.NETHERITE_BLOCK))
                 .properties(p -> p.noOcclusion())
-                .properties(p -> p.noCollission())
+//                .properties(p -> p.noCollission())
                 .transform(pickaxeOnly())
                 .blockstate((c, p) -> BlockStateGen.horizontalAxisBlock(c, p, s -> p.models()
                         .getExistingFile(p.modLoc("block/bogey/top"))))
