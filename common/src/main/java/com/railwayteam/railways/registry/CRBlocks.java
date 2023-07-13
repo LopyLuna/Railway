@@ -19,6 +19,7 @@ import com.railwayteam.railways.content.custom_tracks.CustomTrackBlockStateGener
 import com.railwayteam.railways.content.custom_tracks.monorail.MonorailBlockStateGenerator;
 import com.railwayteam.railways.content.distant_signals.SemaphoreDisplayTarget;
 import com.railwayteam.railways.content.handcart.HandcartBlock;
+import com.railwayteam.railways.content.handcart.HandcartItem;
 import com.railwayteam.railways.content.semaphore.SemaphoreBlock;
 import com.railwayteam.railways.content.semaphore.SemaphoreItem;
 import com.railwayteam.railways.content.smokestack.AxisSmokeStackBlock;
@@ -312,9 +313,10 @@ public class CRBlocks {
                     .register();
 
     public static final BlockEntry<HandcartBlock> HANDCART =
-            REGISTRATE.block("handcart", HandcartBlock::new)
+            REGISTRATE.block("handcart", HandcartBlock::create)
                     .properties(p -> p.color(MaterialColor.PODZOL))
                     .transform(BuilderTransformers.handcart())
+                    .item(HandcartItem.ofType(CREdgePointTypes.HANDCART))
                     .lang("Handcart")
                     .register();
 

@@ -82,7 +82,7 @@ public class CRBogeyStyles {
     ;
 
     public static final BogeyStyle
-            HANDCART = create("handcart", TRIPLEAXLE_CYCLE_GROUP)
+            HANDCART = create("handcart", "handcart_cycle_group")
             .size(BogeySizes.SMALL, () -> CRBogeyRenderer.HandCartBogeyRenderer::new, CRBlocks.HANDCART)
             .build();
 
