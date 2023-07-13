@@ -316,7 +316,7 @@ public class CRBlocks {
             REGISTRATE.block("handcar", HandcarBlock::create)
                     .properties(p -> p.color(MaterialColor.PODZOL))
                     .transform(BuilderTransformers.handcar())
-                    .item(HandcarItem.ofType(CREdgePointTypes.HANDCAR))
+                    .item(HandcarItem::new)
                     .build()
                     .lang("Handcar")
                     .register();

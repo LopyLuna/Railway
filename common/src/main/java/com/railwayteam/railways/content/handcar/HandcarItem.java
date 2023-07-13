@@ -20,7 +20,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class HandcarItem extends TrackTargetingBlockItem {
     public HandcarItem(Block block, Item.Properties properties) {
-        super(block, properties, CREdgePointTypes.COUPLER);
+        super(block, properties, CREdgePointTypes.HANDCAR);
     }
 
     @Override
@@ -34,7 +34,7 @@ public class HandcarItem extends TrackTargetingBlockItem {
         if (player == null)
             return InteractionResult.FAIL;
 
-        if (state.getBlock() instanceof ITrackBlock track) {
+        if (state.getBlock() instanceof ITrackBlock) {
             Direction direction = Direction.UP;
             BlockPos placePos = pos.relative(direction);
             Vec3 hitPos = new Vec3(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5)
