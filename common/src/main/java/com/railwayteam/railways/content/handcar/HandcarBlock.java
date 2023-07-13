@@ -1,6 +1,5 @@
 package com.railwayteam.railways.content.handcar;
 
-import com.railwayteam.railways.content.conductor.vent.VentBlock;
 import com.railwayteam.railways.content.custom_bogeys.CRBogeyBlock;
 import com.railwayteam.railways.registry.CRBogeyStyles;
 import com.simibubi.create.content.trains.bogey.BogeySizes;
