@@ -59,7 +59,7 @@ public class CRBlockEntities {
             .blockEntity("bogey", CRBogeyBlockEntity::new)
             .renderer(() -> BogeyBlockEntityRenderer::new)
             .validBlocks(CRBlocks.SINGLEAXLE_BOGEY, CRBlocks.DOUBLEAXLE_BOGEY,
-                    CRBlocks.LARGE_PLATFORM_DOUBLEAXLE_BOGEY, CRBlocks.TRIPLEAXLE_BOGEY)
+                    CRBlocks.LARGE_PLATFORM_DOUBLEAXLE_BOGEY, CRBlocks.TRIPLEAXLE_BOGEY, CRBlocks.HANDCART)
             .register();
 
     public static final BlockEntityEntry<ConductorWhistleFlagBlockEntity> CONDUCTOR_WHISTLE_FLAG = REGISTRATE.blockEntity("conductor_whistle", ConductorWhistleFlagBlockEntity::new)

@@ -374,4 +374,38 @@ public class CRBogeyRenderer {
             }
         }
     }
+
+    public static class HandCartBogeyRenderer extends BogeyRenderer {
+        @Override
+        public void initialiseContraptionModelData(MaterialManager materialManager) {
+            createModelInstances(materialManager, CR_BOGEY_WHEELS, 2);
+            createModelInstances(materialManager, HANDCART_FRAME);
+        }
+
+        @Override
+        public BogeySizes.BogeySize getSize() {
+            return BogeySizes.SMALL;
+        }
+
+        @Override
+        public void render(CompoundTag bogeyData, float wheelAngle, PoseStack ms, int light, VertexConsumer vb, boolean inContraption) {
+            boolean inInstancedContraption = vb == null;
+            Transform<?> transform = getTransformFromPartial(HANDCART_FRAME, ms, inInstancedContraption)
+                    .translate(0, 5 / 16f, 0);
+            finalize(transform, ms, light, vb);
+
+            Transform<?>[] wheels = getTransformsFromPartial(CR_BOGEY_WHEELS, ms, inInstancedContraption, 2);
+            for (int side : Iterate.positiveAndNegative) {
+                if (!inInstancedContraption)
+                    ms.pushPose();
+                Transform<?> wheel = wheels[(side + 1) / 2];
+                wheel.translate(0, 12 / 16f, side)
+                        .rotateX(wheelAngle)
+                        .translate(0, -7 / 16f, 0);
+                finalize(wheel, ms, light, vb);
+                if (!inInstancedContraption)
+                    ms.popPose();
+            }
+        }
+    }
 }

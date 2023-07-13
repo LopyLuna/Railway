@@ -18,6 +18,7 @@ import com.railwayteam.railways.content.custom_bogeys.monobogey.MonoBogeyBlock;
 import com.railwayteam.railways.content.custom_tracks.CustomTrackBlockStateGenerator;
 import com.railwayteam.railways.content.custom_tracks.monorail.MonorailBlockStateGenerator;
 import com.railwayteam.railways.content.distant_signals.SemaphoreDisplayTarget;
+import com.railwayteam.railways.content.handcart.HandcartBlock;
 import com.railwayteam.railways.content.semaphore.SemaphoreBlock;
 import com.railwayteam.railways.content.semaphore.SemaphoreItem;
 import com.railwayteam.railways.content.smokestack.AxisSmokeStackBlock;
@@ -308,6 +309,13 @@ public class CRBlocks {
                     .properties(p -> p.color(MaterialColor.PODZOL))
                     .transform(BuilderTransformers.standardBogey())
                     .lang("Triple Axle Bogey")
+                    .register();
+
+    public static final BlockEntry<HandcartBlock> HANDCART =
+            REGISTRATE.block("handcart", HandcartBlock::new)
+                    .properties(p -> p.color(MaterialColor.PODZOL))
+                    .transform(BuilderTransformers.handcart())
+                    .lang("Handcart")
                     .register();
 
 

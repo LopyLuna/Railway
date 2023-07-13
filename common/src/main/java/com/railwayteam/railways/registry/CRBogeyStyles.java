@@ -81,6 +81,11 @@ public class CRBogeyStyles {
                     .build()
     ;
 
+    public static final BogeyStyle
+            HANDCART = create("handcart", TRIPLEAXLE_CYCLE_GROUP)
+            .size(BogeySizes.SMALL, () -> CRBogeyRenderer.HandCartBogeyRenderer::new, CRBlocks.HANDCART)
+            .build();
+
 
     public static AllBogeyStyles.BogeyStyleBuilder create(String name, String cycleGroup) {
         return create(Railways.asResource(name), Railways.asResource(cycleGroup))
