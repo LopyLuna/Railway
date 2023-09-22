@@ -153,6 +153,10 @@ dependencies {
         modImplementation("com.rabbitminers:extendedbogeys-fabric:${EB_verison}+fabric")
     }
 
+    if (enable_betterend.toBoolean()) {
+        modImplementation("maven.modrinth:betterend:${betterend_version}")
+    }
+
     implementation(include("com.github.llamalad7.mixinextras:mixinextras-fabric:${mixin_extras_version}"))
     annotationProcessor("com.github.llamalad7.mixinextras:mixinextras-fabric:${mixin_extras_version}")
 }
