@@ -40,8 +40,4 @@ public class RailwaysImpl implements ModInitializer {
 	public static void registerCommands(BiConsumer<CommandDispatcher<CommandSourceStack>, Boolean> consumer) {
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> consumer.accept(dispatcher, environment.includeDedicated));
 	}
-
-	public static void registerConfig(ModConfig.Type type, ForgeConfigSpec spec) {
-		ModLoadingContext.registerConfig(Railways.MODID, type, spec);
-	}
 }

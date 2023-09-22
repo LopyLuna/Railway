@@ -70,8 +70,4 @@ public class RailwaysImpl {
 		boolean dedicated = selection == CommandSelection.ALL || selection == CommandSelection.DEDICATED;
 		commandConsumers.forEach(consumer -> consumer.accept(event.getDispatcher(), dedicated));
 	}
-
-	public static void registerConfig(ModConfig.Type type, ForgeConfigSpec spec) {
-		ModLoadingContext.get().registerConfig(type, spec);
-	}
 }
